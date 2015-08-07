@@ -17,10 +17,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'main/AndroidManifest.xml'
+        exclude 'main/res/mipmap-hdpi/ic_launcher.png'
+        exclude 'main/res/mipmap-mdpi/ic_launcher.png'
+        exclude 'main/res/mipmap-xhdpi/ic_launcher.png'
+        exclude 'main/res/mipmap-xxhdpi/ic_launcher.png'
+        exclude 'main/res/values/strings.xml'
+        exclude 'main/res/values/styles.xml'
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.googlecode.android-wheel:datetime-picker:1.1'
+    compile project(':pdcore')
 }

@@ -95,4 +95,13 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
 
+    <!-- Tuner -->
+    <string name="title"></string>
+    <string name="e">E</string>
+    <string name="a">A</string>
+    <string name="d">D</string>
+    <string name="g">G</string>
+    <string name="b">B</string>
+    <string name="e2">E</string>
+
 </resources>
