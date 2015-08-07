@@ -1,0 +1,109 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content of the screen -->
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:id="@+id/tempo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:text="90"
+            android:textSize="28dp"
+            android:numeric="integer"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_plus"
+            android:id="@+id/bt_plus"
+            android:layout_alignTop="@+id/tempo"
+            android:layout_toRightOf="@+id/tempo"
+            android:layout_toEndOf="@+id/tempo"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_minus"
+            android:id="@+id/bt_minus"
+            android:layout_alignTop="@+id/tempo"
+            android:layout_toLeftOf="@+id/tempo"
+            android:layout_toStartOf="@+id/tempo"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quarter"
+            android:id="@+id/bt_quarter"
+            android:layout_marginTop="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/bt_plus"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eighth"
+            android:id="@+id/bt_eighth"
+            android:layout_alignTop="@+id/bt_quarter"
+            android:layout_toRightOf="@+id/bt_quarter"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triplet"
+            android:id="@+id/bt_trip"
+            android:layout_alignTop="@+id/bt_eighth"
+            android:layout_toRightOf="@+id/bt_eighth"
+            android:layout_toEndOf="@+id/bt_eighth"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sixteen"
+            android:id="@+id/bt_sixteen"
+            android:layout_toRightOf="@+id/bt_trip"
+            android:layout_toEndOf="@+id/bt_trip"
+            android:layout_alignTop="@+id/bt_trip"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/bt_start"
+            android:layout_below="@+id/bt_eighth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="118dp"/>
+
+    </RelativeLayout>
+
+    <!-- Content in the nav drawer -->
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"/>
+
+</android.support.v4.widget.DrawerLayout>
