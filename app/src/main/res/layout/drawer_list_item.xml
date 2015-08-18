@@ -8,6 +8,6 @@
           android:paddingLeft="16dp"
           android:paddingRight="16dp"
           android:textColor="#fff"
-          android:text="Transpose"
+          android:text="@string/title_activity_transpose"
           android:textSize="20sp"
           android:paddingTop="20dp"/>

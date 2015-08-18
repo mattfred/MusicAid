@@ -14,8 +14,8 @@ import kankan.wheel.widget.adapters.AbstractWheelAdapter;
  */
 public class WheelAdapter extends AbstractWheelAdapter
 {
-    Context context;
-    String[] keys;
+    private final Context context;
+    private final String[] keys;
 
     public WheelAdapter(Context context)
     {

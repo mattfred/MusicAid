@@ -222,7 +222,7 @@ public class Transpose extends AppCompatActivity
 
     }
 
-    final OnWheelScrollListener scrollListener = new OnWheelScrollListener()
+    private final OnWheelScrollListener scrollListener = new OnWheelScrollListener()
     {
         @Override
         public void onScrollingStarted(WheelView wheelView)

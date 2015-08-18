@@ -45,8 +45,8 @@ public class Metronome extends AppCompatActivity implements View.OnClickListener
     private MetronomeAsyncTask asyncTask;
 
     private TextView tempo;
-    int currentTempo;
-    int bpm;
+    private int currentTempo;
+    private int bpm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

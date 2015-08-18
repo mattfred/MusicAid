@@ -9,7 +9,7 @@ import android.media.AudioTrack;
  */
 public class PitchMaker
 {
-    private int sampleRate;
+    private final int sampleRate;
     private AudioTrack audioTrack;
 
     public PitchMaker(int sampleRate)
@@ -27,7 +27,7 @@ public class PitchMaker
         return sample;
     }
 
-    public byte[] get16BitPcm(double[] samples)
+    private byte[] get16BitPcm(double[] samples)
     {
         byte[] generatedSound = new byte[2 * samples.length];
         int index = 0;

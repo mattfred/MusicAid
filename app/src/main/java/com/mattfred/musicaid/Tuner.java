@@ -17,11 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
-
-import com.mattfred.musicaid.tuner.PitchView;
 
 import static com.mattfred.musicaid.utils.Constants.ABOUT_FRAGMENT;
 import static com.mattfred.musicaid.utils.Constants.METRONOME;
@@ -31,20 +27,6 @@ public class Tuner extends AppCompatActivity
 {
     private final String TAG = this.getClass().getSimpleName();
 
-    //private PdUiDispatcher dispatcher;
-
-    private Button eButton;
-    private Button aButton;
-    private Button dButton;
-    private Button gButton;
-    private Button bButton;
-    private Button eeButton;
-    private TextView pitchLabel;
-    private PitchView pitchView;
-
-    //private PdService pdService = null;
-
-    private String[] mActivityTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -55,7 +37,7 @@ public class Tuner extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tuner);
 
-        mActivityTitles = getResources().getStringArray(R.array.activity_titles);
+        String[] mActivityTitles = getResources().getStringArray(R.array.activity_titles);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 

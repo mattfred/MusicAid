@@ -18,7 +18,7 @@ public class MetronomePlayer
 
     private boolean play = true;
 
-    private PitchMaker pitchMaker = new PitchMaker(8000);
+    private final PitchMaker pitchMaker = new PitchMaker(8000);
 
     public MetronomePlayer() {
         pitchMaker.createPlayer();

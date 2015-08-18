@@ -95,4 +95,7 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
 
+    <!-- Place Holders-->
+    <string name="place_holder_text">Holder Text</string>
+
 </resources>

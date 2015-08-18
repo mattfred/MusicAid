@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,8 +23,7 @@ public class About extends DialogFragment
     {
         context = getActivity().getApplicationContext();
 
-        LayoutInflater inflater = getActivity().getLayoutInflater();
-        View mainView = inflater.inflate(R.layout.about, null);
+        View mainView = View.inflate(context, R.layout.about, null);
         TextView version = (TextView) mainView.findViewById(R.id.tv_version);
 
         version.setText(getString(R.string.version) + getAppVersion());
