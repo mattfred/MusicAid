@@ -25,5 +25,9 @@
             android:label="@string/title_activity_tuner" >
         </activity>
 
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="96932295f2f5f3566b8e7f579e6089d51997e06f" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

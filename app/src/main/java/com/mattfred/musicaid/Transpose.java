@@ -23,11 +23,13 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
 import com.mattfred.musicaid.wheels.WheelAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import io.fabric.sdk.android.Fabric;
 import kankan.wheel.widget.OnWheelChangedListener;
 import kankan.wheel.widget.OnWheelScrollListener;
 import kankan.wheel.widget.WheelView;
@@ -66,6 +68,8 @@ public class Transpose extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.transpose);
+
+        Fabric.with(this, new Crashlytics());
 
         preferences = getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
         accidentals = (Button) findViewById(R.id.bt_accidentals);
